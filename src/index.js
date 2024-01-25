@@ -22,7 +22,7 @@ const start = async () => {
   app.register((fastify) =>
     fastify.post(
       '/test',
-      (req) => `OK - arg1:${req.body.arg1}, arg2:${req.body.arg1}`
+      (req) => `OK - arg1:${req.body.arg1}, arg2:${req.body.arg2}`
     )
   );
 };
