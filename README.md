@@ -5,3 +5,6 @@
 `npm i`
 
 `npm start`
+
+Swagger UI at:
+`localhost/documentation`
