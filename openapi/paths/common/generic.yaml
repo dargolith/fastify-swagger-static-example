@@ -1,0 +1,23 @@
+components:
+  schemas:
+    Args:
+      type: object
+      properties:
+        required:
+          - arg1
+        arg1:
+          description: Argument 1.
+          type: string
+        arg2:
+          description: Argument 2.
+          type: string
+  responses:
+    "200":
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: Some reply.
+            type: string
+    "5XX":
+      $ref: "../../definitions/responses/500.yaml"

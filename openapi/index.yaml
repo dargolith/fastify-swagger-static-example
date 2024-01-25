@@ -1,0 +1,12 @@
+openapi: 3.0.0
+info:
+  title: "Test Service API"
+  description: >
+    Service testing fastify swagger static specification with references.
+  version: "1.0.0"
+schemes:
+  - https
+  - http
+paths:
+  /test:
+    $ref: ./paths/subspec/test.yaml

@@ -1,0 +1,16 @@
+post:
+  summary: Tests an API sub spec.
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../common/generic.yaml#/components/schemas/Args"
+  responses:
+    "200":
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: "../common/generic.yaml#/components/responses/200"
+    "5XX":
+      $ref: "../common/generic.yaml#/components/responses/5XX"
